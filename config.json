@@ -3,10 +3,10 @@
   "site_title": "Faga.dev",
   "site_description": "Guilherme Faga's portfolio",
   "site_keywords": [
-    { keyword: "guilherme" },
-    { keyword: "faga" },
-    { keyword: "data engineer" },
-    { keyword: "developer" }
+    { "keyword": "guilherme" },
+    { "keyword": "faga" },
+    { "keyword": "data engineer" },
+    { "keyword": "developer" }
   ],
   "posts_per_page": 5,
   "twitter_account": ".",
