@@ -3,15 +3,10 @@
   "site_title": "Faga.dev",
   "site_description": "Guilherme Faga's portfolio",
   "site_keywords": [
-    {
-      "keyword": "Next.js"
-    },
-    {
-      "keyword": "Netlify"
-    },
-    {
-      "keyword": "React"
-    }
+    "guilherme",
+    "faga",
+    "data engineer",
+    "developer"
   ],
   "posts_per_page": 5,
   "twitter_account": ".",
