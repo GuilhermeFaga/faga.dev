@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Inter";
+  src: url("Inter-VariableFont_slnt,wght.ttf");
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  color: black
+}
+
+.divider {
+  margin: 24px 0;
+  border-bottom: 1px solid black;
+}
