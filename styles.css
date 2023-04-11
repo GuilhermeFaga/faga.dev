@@ -11,7 +11,7 @@ body {
   align-items: center;
 }
 
-body>section {
+body>div {
   max-width: 1000px;
 }
 
