@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "Inter";
-  src: url("Inter-VariableFont_slnt,wght.ttf");
-  font-display: swap;
+  font-family: "Verdana";
+  src: local("Verdana");
+  font-display: optional;
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Verdana", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
