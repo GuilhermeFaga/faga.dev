@@ -9,6 +9,9 @@ module.exports = {
     extend: {
       blur: {
         xs: '0.5px',
+      },
+      colors: {
+        red: "#fb1414"
       }
     },
   },
