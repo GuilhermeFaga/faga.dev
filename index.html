@@ -6,244 +6,464 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Currículo e portifólio de Guilherme Faga (Guilherme Farias Galletti)">
-  <link href="styles.css" rel="stylesheet">
+  <link href="/output.css" rel="stylesheet">
 </head>
 
 <body>
-  <div>
-
-    <h1>Guilherme Faga</h1>
-
-    <p>
-      <b>Engenheiro de software</b> altamente qualificado com mais de 3 anos de experiência em desenvolvimento de
-      software
-      e
-      dados. Forte capacidade analítica e habilidades para resolver problemas complexos. Capacidade de trabalhar em
-      equipe
-      e gerenciar projetos de software do início ao fim. Altamente comprometido em entregar soluções de alta qualidade
-      que
-      atendam às necessidades do cliente.
-    </p>
-
-    <div class="menu">
-      <a href="https://github.com/GuilhermeFaga" target="_blank">GitHub</a>
-      <span>|</span>
-      <a href="https://www.linkedin.com/in/guilherme-faga/" target="_blank">LinkedIn</a>
-      <span>|</span>
-      <a href="mailto:firiguito@gmail.com">firiguito@gmail.com</a>
-      <span>|</span>
-      <a href="tel:11945997558">(11) 94599-7558</a>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="menu">
-      <a href="#education">Educação</a>
-      <span>|</span>
+  <section id="header" class="h-20 items-center justify-between pl-4 pr-4">
+    <span class="font-bold">faga.dev</span>
+    <div class="hidden font-medium md:flex gap-4">
+      <a href="#">Home</a>
+      <a href="#about">Sobre</a>
       <a href="#experience">Experiência</a>
-      <span>|</span>
-      <a href="#skills">Habilidades</a>
-      <span>|</span>
       <a href="#projects">Projetos</a>
-      <span>|</span>
-      <a href="#faq">FAQ</a>
+      <a href="#contact">Contato</a>
     </div>
+  </section>
 
-    <section id="education">
-      <h2>Educação</h2>
-      <h3>Colégio Pedro II - Ensino Técnico em Sistemas</h3>
-      <h4>2016 - 2019</h4>
-      <p>
-        Aprendeu e praticou habilidades lógicas de programação, criação de algoritmos, estruturas de dados, banco de
-        dados
-        e redes.
-      </p>
+  <section id="home" class="bg-gray-50">
+    <div class="pt-10 pb-20">
+      <div class="flex flex-col-reverse md:flex-row items-center text-center md:items-start md:text-start">
+        <div class="flex flex-col w-full md:w-[600px] h-fit md:h-[350px] justify-center">
+          <div class="h-fit">
+            <p class="text-5xl font-bold mb-6">Software<br>Developer</p>
+            <p class="font-body text-gray-500 mb-6">
+              Olá, sou Guilherme Faga. Um engenheiro de<br>software apaixonado com sede em São Paulo📍
+            </p>
+            <div class="flex gap-4 w-full justify-center md:justify-start">
+              <a class="block linkedin w-[30px] h-[30px]" href="https://www.linkedin.com/in/guilherme-faga/"
+                target="_blank" /></a>
+              <a class="block github w-[30px] h-[30px]" href="https://github.com/GuilhermeFaga/" target="_blank" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="h-[280px] w-[280px] mb-10 md:h-[350px] md:w-[350px] bg-black rounded-full">
+          <img />
+        </div>
+      </div>
+      <div
+        class="flex flex-col md:flex-row font-body font-semibold mt-16 md:mt-0 items-center text-center md:text-start gap-4 md:gap-10">
+        <p class="whitespace-nowrap">Tech Stack</p>
+        <div class="w-20 h-px md:w-px md:h-5 border border-gray-300"></div>
 
-      <h3>IFSP — Análise e Desenvolvimento de Sistemas</h3>
-      <h4>Feb 2020 - 2024</h4>
-      <p>
-        Desenvolveu habilidades avançadas em programação, algoritmos, estruturas de dados, sistemas operacionais, redes
-        e
-        gerenciamento de projetos.
-      </p>
-    </section>
+        <div class="flex gap-4 w-72 md:w-full flex-wrap justify-center md:justify-start">
+          <div class="bg-white p-3 rounded-full border">
+            <a class="block nextjs w-[30px] h-[30px]" href="https://nextjs.org/" target="_blank"></a>
+          </div>
+          <div class="bg-white p-3 rounded-full border">
+            <a class="block react w-[30px] h-[30px]" href="https://react.dev/" target="_blank"></a>
+          </div>
+          <div class="bg-white p-3 rounded-full border">
+            <a class="block javascript w-[30px] h-[30px]"
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/" target="_blank"></a>
+          </div>
+          <div class="bg-white p-3 rounded-full border">
+            <a class="block tailwind w-[30px] h-[30px]" href="https://tailwindcss.com/" target="_blank"></a>
+          </div>
+          <div class="bg-white p-3 rounded-full border">
+            <a class="block firebase w-[30px] h-[30px]" href="https://firebase.google.com/" target="_blank"></a>
+          </div>
+          <div class="bg-white p-3 rounded-full border">
+            <a class="block gcloud w-[30px] h-[30px]" href="https://cloud.google.com/" target="_blank"></a>
+          </div>
+        </div>
 
+      </div>
+    </div>
+  </section>
 
-    <section id="experience">
-      <h2>Experiência</h2>
-      <h3>DP6, São Paulo — Engenheiro de Software</h3>
-      <h4>Mar 2020 - Set 2022</h4>
-      <ul>
-        <li>
-          Projetou e desenvolveu diversas automações de ingestão de dados, que extraíam informações de várias APIs, para
-          garantir que os dados fossem coletados e processados de maneira eficiente e precisa.
-        </li>
-        <li>
-          Criou e implementou uma pipeline de entrega contínua (CD) utilizando Git, Terraform e Google Cloud Platform
-          (GCP)
-          para tornar a automação mais eficiente e escalável.
-        </li>
-        <li>
-          Desenvolveu uma pipeline de qualidade de dados para validar eventos no ambiente de produção, garantindo a
-          confiabilidade e a integridade dos dados coletados.
-        </li>
-      </ul>
-    </section>
+  <section id="about" class="bg-white">
+    <div class="py-20 px-4 w-full flex flex-col md:flex-row justify-between">
+      <div class="h-[220px] w-full md:h-[320px] md:w-[400px] rounded-lg border-none overflow-hidden">
+        <img src="/images/about.webp" class="block object-cover ml-auto mr-auto h-full blur-xs" />
+      </div>
+      <div class="w-full md:w-[calc(100%_-_400px)] text-center md:text-start mt-10 md:mt-0 md:ml-20">
+        <p class="font-bold uppercase text-red-600 mb-2">Sobre mim</p>
+        <p class="font-bold text-2xl mb-4">Um Engenheiro de Software dedicado em São Paulo 📍</p>
+        <p class="font-body text-gray-500">
+          Sou um Engenheiro de Software altamente qualificado com mais de 3 anos de experiência em desenvolvimento de
+          software e dados. Forte capacidade analítica e habilidades para resolver problemas complexos. Capacidade de
+          trabalhar em equipe e gerenciar projetos de software do início ao fim. Altamente comprometido em entregar
+          soluções de alta qualidade que atendam às necessidades do cliente.
+        </p>
+      </div>
+    </div>
+  </section>
 
+  <section id="experience" class="bg-gray-50">
+    <div class="flex flex-col items-center text-center md:items-start md:text-start py-20 px-4 w-full">
+      <p class="font-bold uppercase text-red-600 mb-2">Experiência</p>
+      <p class="font-bold text-2xl mb-16">Experiências profissionais que ajudaram no meu desenvolvimento 🚀</p>
+      <div class="flex flex-col gap-8">
+        <div>
+          <p class="font-bold text-xl mb-1">DP6 - Engenheiro de software</p>
+          <div class="w-full h-px border border-gray-300"></div>
+        </div>
 
-    <section id="skills">
-      <h2>Habilidades</h2>
-      <h4>Google Cloud Engineering</h4>
-      <p>Cloud Functions, App Engine, Big Query, Cloud Build</p>
+        <div class="flex flex-col md:flex-row gap-10">
+          <div class="w-full md:w-1/2">
+            <p class="font-body text-gray-500">
+              Durante meu tempo na DP6, tive a oportunidade de atuar em diversas áreas da tecnologia, aprimorando minhas
+              habilidades e conhecimentos práticos por meio do trabalho em equipe com profissionais experientes e
+              capacitados.
+            </p>
+          </div>
+        </div>
 
-      <h4>Analytics</h4>
-      <p>GA, GA4, GTM, Data Studios, SQL, Google Sheets</p>
+        <div class="flex flex-col md:flex-row gap-10">
+          <div class="w-full md:w-1/2">
+            <p class="font-bold uppercase mb-2">Dados</p>
+            <p class="font-body text-gray-500">
+              Projetei e implementei pipelines de coleta de dados, bem como processos de controle de qualidade para
+              garantir a integridade dos dados. Desenvolvi dashboards personalizados para análises avançadas e utilizei
+              algoritmos de previsão temporal para criar um banco de dados, fornecendo insights para auxiliar o cliente
+              em suas tomadas de decisões estratégicas.
+            </p>
+          </div>
+          <div class="flex w-full md:w-1/2 justify-evenly items-center">
+            <a class="block big-bigquery w-[100px] h-[100px]" href="https://cloud.google.com/bigquery"
+              target="_blank"></a>
+            <a class="block big-datastudio w-[100px] h-[100px]" href="https://cloud.google.com/looker-studio"
+              target="_blank"></a>
+          </div>
+        </div>
 
-      <h4>Desenvolvimento Web</h4>
-      <p>React, Next.js, Node.js, APIs, Git, Storybook, UI & UX</p>
+        <div class="flex flex-col md:flex-row gap-10">
+          <div class="w-full md:w-1/2">
+            <p class="font-bold uppercase mb-2">Software</p>
+            <p class="font-body text-gray-500">
+              Desenvolvi soluções automatizadas que aprimoraram a gestão de projetos e aumentaram a eficiência das
+              tarefas diárias da equipe. Criei um sistema web interno para análise e visualização das horas trabalhadas
+              pelos colaboradores, fornecendo uma visão holística e estratégica para a administração do tempo e
+              recursos.
+            </p>
+          </div>
+          <div class="flex w-full md:w-1/2 justify-evenly items-center">
+            <a class="block big-nextjs w-[100px] h-[100px]" href="https://nextjs.org/" target="_blank"></a>
+            <a class="block big-redux w-[100px] h-[100px]" href="https://redux.js.org/" target="_blank"></a>
+          </div>
+        </div>
 
-      <h4>Desenvolvimento de app</h4>
-      <p>ReactNative, Flutter, Firebase, Git, UI & UX</p>
+        <div class="flex flex-col md:flex-row gap-10">
+          <div class="w-full md:w-1/2">
+            <p class="font-bold uppercase mb-2">Infraestrutura</p>
+            <p class="font-body text-gray-500">
+              Elaborei, configurarei e documentei fluxos de entrega contínua em múltiplos projetos, com o objetivo de
+              simplificar o desenvolvimento e manutenção em ambientes de nuvem, como o Google Cloud Platform, utilizando
+              ferramentas de integração e entrega contínua (CI/CD) como Google Cloud Build e uma ferramenta IaC chamada
+              Terraform.
+            </p>
+          </div>
+          <div class="flex w-full md:w-1/2 justify-evenly items-center">
+            <a class="block big-gcloud w-[100px] h-[100px]" href="https://cloud.google.com/" target="_blank"></a>
+            <a class="block big-terraform w-[100px] h-[100px]" href="https://www.terraform.io/" target="_blank"></a>
+          </div>
+        </div>
 
-      <h4>DevOps</h4>
-      <p>Linux, Docker, CI & CD, Terraform, GCP</p>
+      </div>
+    </div>
+  </section>
 
-      <h4>Automação</h4>
-      <p>Apps Script, Python</p>
-    </section>
+  <section id="skills" class="bg-white justify-start">
+    <div class="py-10 md:p-0 md:py-10 md:max-w-none overflow-hidden">
+      <div class="animation flex gap-4 md:w-full">
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-html5 w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-css3 w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-javascript w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-typescript w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-react w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-redux w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-nextjs w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-materialui w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-mui w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-nodejs w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-npm w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-git w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-github w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-json w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-sequelize w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-postgres w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-mysql w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-docker w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-linux w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-terraform w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-gcloud w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-firebase w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-colab w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-python w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-csharp w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-swagger w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-postman w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-adobexd w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-figma w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-illustrator w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-photoshop w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-aftereffects w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-premiere w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-lightroom w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-storybooks w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-sheets w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-markdown w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-trello w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-raspberrypi w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-grafana w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-ga w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-gtm w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-pihole w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-portainer w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-tailwind w-[24px] h-[24px]"></a>
+        </div>
+        <div class="bg-gray-50 p-3 rounded-full border">
+          <a class="block small-stackoverflow w-[24px] h-[24px]"></a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section id="projects" class="bg-gray-50">
+    <div class="flex flex-col items-center text-center md:items-start md:text-start py-20 px-4 w-full">
+      <p class="font-bold uppercase text-red-600 mb-2">Portfólio</p>
+      <p class="font-bold text-2xl mb-16">Cada projeto é uma peça única de desenvolvimento 🧩</p>
 
-    <section id="projects">
-      <h2>Projetos</h2>
-      <h3>Kafra Bot - Projeto Pessoal</h3>
-      <p>
-        Kafra Bot é um projeto pessoal que desenvolvi utilizando Node.js e Discord.js. Este bot Discord é capaz de
-        consultar dados de várias APIs de bancos de dados com comandos de chat, proporcionando uma experiência
-        interativa
-        para os usuários. Com Kafra Bot, os usuários podem obter informações úteis sobre jogos, músicas, notícias e
-        muito
-        mais com facilidade e rapidez. Este projeto me permitiu aprimorar minhas habilidades de programação,
-        especialmente
-        em Node.js, APIs e Discord.js, além de explorar o desenvolvimento de bots e aplicações web.
-      </p>
-      <h3>Kafra App - Projeto Pessoal</h3>
-      <p>
-        Além de desenvolver o Kafra Bot, criei um aplicativo multiplataforma com o mesmo propósito, utilizando Flutter e
-        Firebase. O objetivo era oferecer aos usuários uma experiência mais completa e acessível, permitindo que eles
-        acessassem as funcionalidades do bot em dispositivos móveis. Desenvolvi habilidades em design de interface do
-        usuário e experiência do usuário, bem como em desenvolvimento multiplataforma, Flutter e Firebase. Acredito que
-        este projeto demonstre meu comprometimento em entregar soluções eficientes e escaláveis aos usuários e que
-        possuo
-        as habilidades técnicas necessárias para desenvolver aplicativos móveis modernos e funcionais. Estou muito
-        orgulhoso deste projeto e acredito que ele ilustra meu interesse e habilidades em desenvolvimento de software e
-        automação.
-      </p>
-      <h3>Horas DP6 - Projeto Interno da DP6</h3>
-      <p>Aplicativo Web para verificar o banco de horas.</p>
-      <ul>
-        <li>
-          Prototipou e desenvolveu a interface do aplicativo utilizando a ferramenta Adobe XD, colocando em prática
-          técnicas de usabilidade e experiência do usuário (UX).
-        </li>
-        <li>
-          Responsável pelo desenvolvimento da API do aplicativo, que realiza a leitura de dados do BigQuery e a conexão
-          com APIs de terceiros, utilizando um sistema de autenticação próprio.
-        </li>
-        <li>
-          Usou tecnologias Next.js, MUI e Redux para desenvolver a interface.
-        </li>
-      </ul>
-      <h3><a href="https://github.com/DP6/gcp-terraform-template" target="_blank">gcp-terraform-template</a> - Projeto
-        Open Source da DP6</h3>
-      <p>
-        Na DP6, fui responsável por criar um template open source de Terraform para automatizar a criação e manutenção
-        de
-        Cloud Functions no Google Cloud Platform. Com o Terraform, é possível definir a infraestrutura como código,
-        usando
-        arquivos .tf para configurar e implantar as funções na nuvem. Isso tornou o processo mais eficiente e escalável,
-        permitindo o controle de versão das configurações e dos códigos das funções no git. Qualquer projeto que utiliza
-        o
-        Google Cloud Platform pode usar este template, especialmente aqueles que trabalham com Cloud Functions. Com esta
-        solução, foi possível simplificar e agilizar a implantação de novas funções, além de permitir facilmente a
-        reversão de mudanças em caso de problemas.
-      </p>
-    </section>
+      <div class="flex flex-col gap-4">
 
-    <section id="faq">
-      <h2>FAQ</h2>
+        <div
+          class="flex flex-col gap-6 md:gap-0 md:flex-row p-4 bg-white border border-gray-300 rounded-lg w-full h-[750px] md:h-[350px]">
+          <div class="h-full w-full md:w-1/2 bg-black rounded-md">
 
-      <h4>Qual linguagem de programação está mais familiarizado?</h4>
-      <p>
-        Eu sou altamente qualificado em diversas linguagens de programação, incluindo Python, JavaScript e SQL, mas
-        atualmente estou mais familiarizado com JavaScript e suas bibliotecas/frameworks, como React, Next.js e Node.js.
-      </p>
+          </div>
+          <div
+            class="flex flex-col gap-6 md:px-16 w-full h-fit md:h-full md:w-1/2 text-center justify-center items-center">
+            <p class="font-bold uppercase">Horas dp6 ⏰</p>
+            <p class="font-body font-medium text-gray-500">
+              Aplicação web para os colaboradores da empresa analisarem e consultarem seus clocks em diferentes
+              projetos.
+            </p>
+            <div class="flex gap-2">
+              <div class="border border-gray-200 py-2 px-4">
+                Next.js
+              </div>
+              <div class="border border-gray-200 py-2 px-4">
+                Google Cloud Platform
+              </div>
+            </div>
+            <div class="flex items-center gap-2 my-4 md:mb-0 md:mt-4">
+              <a href="https://storybook.horas.dp6.io/" target="_blank">Documentação</a>
+              <a class="block storybooks w-[30px] h-[30px]" href="https://storybook.horas.dp6.io/"
+                target="_blank" /></a>
+            </div>
+          </div>
+        </div>
 
-      <h4>Qual foi um problema crítico que solucionou?</h4>
-      <p>
-        Recentemente, solucionei um problema crítico de ingestão de dados em um dos projetos da DP6. Foi necessário
-        analisar vários logs e executar testes extensivos para identificar e corrigir o problema em um curto período de
-        tempo, garantindo que os dados críticos fossem coletados e processados corretamente.
-      </p>
+        <div
+          class="flex flex-col gap-6 md:gap-0 md:flex-row-reverse p-4 bg-white border border-gray-300 rounded-lg w-full h-[750px] md:h-[350px]">
+          <div class="h-full w-full md:w-1/2 bg-black rounded-md">
 
-      <h4>Qual processo utiliza para encontrar bugs?</h4>
-      <p>
-        Para encontrar bugs, utilizo principalmente testes automatizados e manuais em diferentes níveis, desde testes
-        unitários até testes de aceitação/end-to-end. Também utilizo ferramentas de debug e monitoramento para
-        identificar
-        e solucionar problemas em produção.
-      </p>
+          </div>
+          <div
+            class="flex flex-col gap-6 md:px-16 w-full h-fit md:h-full md:w-1/2 text-center justify-center items-center">
+            <p class="font-bold uppercase">gcp-terraform-template 🧰</p>
+            <p class="font-body font-medium text-gray-500">
+              Template open-source com uma ferramenta de infraestrutura como código para facilitar a criação, testes e
+              manutenção de funções em nuvem com entrega contínua.
+            </p>
+            <div class="flex gap-2">
+              <div class="border border-gray-200 py-2 px-4">
+                Terraform
+              </div>
+              <div class="border border-gray-200 py-2 px-4">
+                GCP
+              </div>
+            </div>
+            <div class="flex items-center gap-2 my-4 md:mb-0 md:mt-4">
+              <a href="https://github.com/DP6/gcp-terraform-template/" target="_blank">Código</a>
+              <a class="block github w-[30px] h-[30px]" href="https://github.com/DP6/gcp-terraform-template/"
+                target="_blank" /></a>
+            </div>
+          </div>
+        </div>
 
-      <h4>O que mais entusiasma você no desenvolvimento?</h4>
-      <p>
-        O que mais me entusiasma no desenvolvimento é a possibilidade de criar soluções inovadoras e eficientes para
-        resolver problemas reais dos clientes. Gosto de trabalhar em projetos desafiadores e aprender novas tecnologias
-        e
-        ferramentas para melhorar minhas habilidades.
-      </p>
+        <div
+          class="flex flex-col gap-6 md:gap-0 md:flex-row p-4 bg-white border border-gray-300 rounded-lg w-full h-[750px] md:h-[350px]">
+          <div class="h-full w-full md:w-1/2 bg-black rounded-md">
 
-      <h4>Qual o projeto em que trabalhou e do qual se orgulha?</h4>
-      <p>
-        Um projeto em que trabalhei e do qual me orgulho é o Horas DP6, um aplicativo web interno da DP6 que desenvolvi.
-        Fui responsável por prototipar e desenvolver a interface do usuário utilizando técnicas de usabilidade e UX,
-        além
-        de criar a API do aplicativo, que se conecta com diversas APIs de terceiros e lê dados do BigQuery. O aplicativo
-        é
-        utilizado por todos os funcionários da empresa para gerenciar seus bancos de horas.
-      </p>
+          </div>
+          <div
+            class="flex flex-col gap-6 md:px-16 w-full h-fit md:h-full md:w-1/2 text-center justify-center items-center">
+            <p class="font-bold uppercase">Kafra App 📱</p>
+            <p class="font-body font-medium text-gray-500">
+              Um app que se alimentava de uma database para fornecer informações sobre um MMO RPG como itens e seus
+              valores com uma interface fácil e intuitiva.
+            </p>
+            <div class="flex gap-2">
+              <div class="border border-gray-200 py-2 px-4">
+                Flutter
+              </div>
+              <div class="border border-gray-200 py-2 px-4">
+                Firebase
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <h4>Qual o projeto no qual trabalhou, mas não se orgulha tanto?</h4>
-      <p>
-        Em um projeto anterior, trabalhei em uma ferramenta de armazenamendo de dados de eventos de analytics que acabou
-        se tornando muito complexa
-        e difícil de manter. Deveria ter simplificado a solução e utilizado tecnologias mais adequadas para o problema.
-      </p>
+        <div
+          class="flex flex-col gap-6 md:gap-0 md:flex-row-reverse p-4 bg-white border border-gray-300 rounded-lg w-full h-[750px] md:h-[350px]">
+          <div class="h-full w-full md:w-1/2 bg-black rounded-md">
 
-      <h4>Qual seu recurso favorito do produto da empresa?</h4>
-      <p>
-        Meu recurso favorito do produto da empresa é o Google Analytics 4 (GA4). É uma ferramenta poderosa para coletar
-        e
-        analisar dados de usuários em diferentes plataformas, permitindo-nos tomar decisões baseadas em dados e melhorar
-        a
-        experiência do usuário.
-      </p>
+          </div>
+          <div
+            class="flex flex-col gap-6 md:px-16 w-full h-fit md:h-full md:w-1/2 text-center justify-center items-center">
+            <p class="font-bold uppercase">Kafra bot 🤖</p>
+            <p class="font-body font-medium text-gray-500">
+              Um bot que se alimentava de uma database para fornecer informações sobre um MMO RPG como itens e seus
+              valores por meio de comandos de chat no Discord.
+            </p>
+            <div class="flex gap-2">
+              <div class="border border-gray-200 py-2 px-4">
+                Node.js
+              </div>
+              <div class="border border-gray-200 py-2 px-4">
+                Discord.js
+              </div>
+            </div>
+            <div class="flex items-center gap-2 my-4 md:mb-0 md:mt-4">
+              <a href="https://github.com/GuilhermeFaga/kafrabot/" target="_blank">Código</a>
+              <a class="block github w-[30px] h-[30px]" href="https://github.com/GuilhermeFaga/kafrabot/"
+                target="_blank" /></a>
+            </div>
+          </div>
+        </div>
 
-      <h4>Como faz para se comunicar de forma eficaz com colegas não técnicos?</h4>
-      <p>
-        Para me comunicar de forma eficaz com colegas não técnicos, tento explicar os conceitos técnicos de forma
-        simples
-        e com exemplos práticos. Também tento entender suas necessidades e preocupações e encontrar soluções que atendam
-        às suas expectativas.
-      </p>
+      </div>
+    </div>
+  </section>
 
-      <h4>Qual o seu ambiente de desenvolvimento ideal?</h4>
-      <p>
-        Meu ambiente de desenvolvimento ideal inclui um computador com uma configuração poderosa e um conjunto de
-        ferramentas de desenvolvimento, como VS Code, Git e WSL. Também gosto de trabalhar em um ambiente colaborativo
-        e de aprendizado, com colegas de equipe experientes e dedicados.
-      </p>
+  <section id="contact" class="bg-white">
+    <div class="flex flex-col items-center text-center md:items-start md:text-start py-20 px-4 w-full">
+      <p class="font-bold uppercase text-red-600 mb-2">Contato</p>
+      <p class="font-bold text-2xl mb-10">Fique à vontade para entrar em contato comigo! 👇</p>
+      <div class="flex flex-col md:flex-row gap-10 md:gap-20">
 
-    </section>
-  </div>
+        <div class="flex flex-col md:flex-row gap-4 items-center text-center">
+          <div class="bg-white p-6 rounded-full border">
+            <a class="block map w-[30px] h-[30px]"></a>
+          </div>
+          <div class="flex flex-col gap-2 md:gap-0">
+            <p class="font-bold">Localização</p>
+            <p class="text-gray-500">São Paulo, Brasil</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-4 items-center text-center md:text-start">
+          <div class="bg-white p-6 rounded-full border">
+            <a class="block mail w-[30px] h-[30px]"></a>
+          </div>
+          <div class="flex flex-col gap-2 md:gap-0">
+            <p class="font-bold">E-Mail</p>
+            <p class="text-gray-500">guilherme@faga.dev</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="footer" class="h-24 bg-[#2d2e32]">
+    <div class="md:p-0 flex gap-4">
+      <a class="block linkedin-light w-[30px] h-[30px]" href="https://www.linkedin.com/in/guilherme-faga/"
+        target="_blank" /></a>
+      <a class="block github-light w-[30px] h-[30px]" href="https://github.com/GuilhermeFaga/" target="_blank" /></a>
+    </div>
+  </section>
 </body>
 
 </html>

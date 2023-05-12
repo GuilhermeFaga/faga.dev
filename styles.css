@@ -1,30 +1,403 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
-  font-family: "Verdana";
-  src: local("Verdana");
-  font-display: optional;
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: url("fonts/Mulish-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: url("fonts/Mulish-Medium.ttf");
+  font-weight: 500;
 }
 
 body {
-  font-family: "Verdana", sans-serif;
+  font-family: "Poppins";
+}
+
+section {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-body>div {
-  max-width: 1000px;
+@media (min-width: 768px) {
+
+  #home {
+    height: calc(100vh - 80px);
+  }
+
+  section>div:first-child {
+    max-width: 950px;
+    padding: 150px 0;
+  }
+
+  .animation {
+    animation: translateH 20s infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
 }
 
-a {
-  color: black
+.animation {
+  animation: translateH 50s infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
 
-.menu a {
-  font-size: 1.2rem;
-  white-space: nowrap;
+@keyframes translateH {
+  100% {
+    transform: translateX(calc(-3020px + 100vw));
+  }
 }
 
-.divider {
-  margin: 24px 0;
-  border-bottom: 1px solid black;
+.map {
+  background: url("/icons/map.svg") no-repeat;
+  background-size: 30px;
+}
+
+.mail {
+  background: url("/icons/mail.svg") no-repeat;
+  background-size: 30px;
+}
+
+.linkedin {
+  background: url("/icons/linkedin.svg") no-repeat;
+  background-size: 30px;
+}
+
+.github {
+  background: url("/icons/github.svg") no-repeat;
+  background-size: 30px;
+}
+
+.linkedin-light {
+  background: url("/icons/linkedin-light.svg") no-repeat;
+  background-size: 30px;
+}
+
+.github-light {
+  background: url("/icons/github-light.svg") no-repeat;
+  background-size: 30px;
+}
+
+
+.nextjs {
+  background: url("/icons/nextjs.svg") no-repeat;
+  background-size: 30px;
+}
+
+.react {
+  background: url("/icons/react.svg") no-repeat;
+  background-size: 30px;
+}
+
+.javascript {
+  background: url("/icons/javascript.svg") no-repeat;
+  background-size: 30px;
+}
+
+.tailwind {
+  background: url("/icons/tailwind.svg") no-repeat;
+  background-size: 30px;
+}
+
+.firebase {
+  background: url("/icons/firebase.svg") no-repeat;
+  background-size: 30px;
+}
+
+.gcloud {
+  background: url("/icons/gcloud.svg") no-repeat;
+  background-size: 30px;
+}
+
+.storybooks {
+  background: url("/icons/storybooks.svg") no-repeat;
+  background-size: 30px;
+}
+
+.big-bigquery {
+  background: url("/icons/big/bigquery.svg") no-repeat;
+  background-size: 100px;
+}
+
+.big-datastudio {
+  background: url("/icons/big/datastudio.svg") no-repeat;
+  background-size: 100px;
+}
+
+.big-nextjs {
+  background: url("/icons/big/nextjs.svg") no-repeat;
+  background-size: 100px;
+}
+
+.big-redux {
+  background: url("/icons/big/redux.svg") no-repeat;
+  background-size: 100px;
+}
+
+.big-gcloud {
+  background: url("/icons/big/gcloud.svg") no-repeat;
+  background-size: 100px;
+}
+
+.big-terraform {
+  background: url("/icons/big/terraform.svg") no-repeat;
+  background-size: 100px;
+}
+
+.small-adobexd {
+  background: url("/icons/small/adobexd.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-aftereffects {
+  background: url("/icons/small/aftereffects.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-colab {
+  background: url("/icons/small/colab.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-csharp {
+  background: url("/icons/small/csharp.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-css3 {
+  background: url("/icons/small/css3.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-docker {
+  background: url("/icons/small/docker.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-figma {
+  background: url("/icons/small/figma.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-firebase {
+  background: url("/icons/small/firebase.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-ga {
+  background: url("/icons/small/ga.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-gcloud {
+  background: url("/icons/small/gcloud.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-git {
+  background: url("/icons/small/git.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-github {
+  background: url("/icons/small/github.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-grafana {
+  background: url("/icons/small/grafana.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-gtm {
+  background: url("/icons/small/gtm.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-html5 {
+  background: url("/icons/small/html5.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-illustrator {
+  background: url("/icons/small/illustrator.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-javascript {
+  background: url("/icons/small/javascript.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-json {
+  background: url("/icons/small/json.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-lightroom {
+  background: url("/icons/small/lightroom.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-linux {
+  background: url("/icons/small/linux.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-markdown {
+  background: url("/icons/small/markdown.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-materialui {
+  background: url("/icons/small/materialui.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-mui {
+  background: url("/icons/small/mui.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-mysql {
+  background: url("/icons/small/mysql.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-nextjs {
+  background: url("/icons/small/nextjs.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-nodejs {
+  background: url("/icons/small/nodejs.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-npm {
+  background: url("/icons/small/npm.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-photoshop {
+  background: url("/icons/small/photoshop.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-pihole {
+  background: url("/icons/small/pihole.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-portainer {
+  background: url("/icons/small/portainer.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-postgres {
+  background: url("/icons/small/postgres.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-postman {
+  background: url("/icons/small/postman.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-premiere {
+  background: url("/icons/small/premiere.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-python {
+  background: url("/icons/small/python.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-raspberrypi {
+  background: url("/icons/small/raspberrypi.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-react {
+  background: url("/icons/small/react.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-redux {
+  background: url("/icons/small/redux.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-sequelize {
+  background: url("/icons/small/sequelize.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-sheets {
+  background: url("/icons/small/sheets.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-stackoverflow {
+  background: url("/icons/small/stackoverflow.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-storybooks {
+  background: url("/icons/small/storybooks.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-swagger {
+  background: url("/icons/small/swagger.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-tailwind {
+  background: url("/icons/small/tailwind.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-terraform {
+  background: url("/icons/small/terraform.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-trello {
+  background: url("/icons/small/trello.svg") no-repeat;
+  background-size: 24px;
+}
+
+.small-typescript {
+  background: url("/icons/small/typescript.svg") no-repeat;
+  background-size: 24px;
 }
