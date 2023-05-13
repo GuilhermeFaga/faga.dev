@@ -2557,6 +2557,8 @@ video {
   font-family: "Poppins";
 
   src: url("fonts/Poppins-Regular.ttf");
+
+  font-display: swap;
 }
 
 @font-face {
@@ -2565,6 +2567,8 @@ video {
   src: url("fonts/Poppins-Bold.ttf");
 
   font-weight: bold;
+
+  font-display: swap;
 }
 
 @font-face {
@@ -2573,6 +2577,8 @@ video {
   src: url("fonts/Poppins-SemiBold.ttf");
 
   font-weight: 600;
+
+  font-display: swap;
 }
 
 @font-face {
@@ -2581,12 +2587,16 @@ video {
   src: url("fonts/Poppins-Medium.ttf");
 
   font-weight: 500;
+
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Mulish";
 
   src: url("fonts/Mulish-Regular.ttf");
+
+  font-display: swap;
 }
 
 @font-face {
@@ -2595,6 +2605,8 @@ video {
   src: url("fonts/Mulish-Medium.ttf");
 
   font-weight: 500;
+
+  font-display: swap;
 }
 
 body {
