@@ -62,6 +62,26 @@ section {
     animation-direction: alternate;
     animation-timing-function: linear;
   }
+
+  .horas-hover {
+    transform: translateY(0%);
+    transition: transform 2s ease-in-out 0s;
+  }
+
+  .horas-hover:hover {
+    transform: translateY(-10%);
+    transition: transform 2s ease-in-out 0s;
+  }
+
+  .kafrabot-hover {
+    transform: translateY(0%);
+    transition: transform 4s ease-in-out 0s;
+  }
+
+  .kafrabot-hover:hover {
+    transform: translateY(-60%);
+    transition: transform 4s ease-in-out 0s;
+  }
 }
 
 .animation {
@@ -75,6 +95,7 @@ section {
     transform: translateX(calc(-3020px + 100vw));
   }
 }
+
 
 .map {
   background: url("/icons/map.svg") no-repeat;

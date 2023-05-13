@@ -843,6 +843,10 @@ video {
   height: 750px !important;
 }
 
+.h-auto {
+  height: auto !important;
+}
+
 .h-fit {
   height: -moz-fit-content !important;
   height: fit-content !important;
@@ -1794,6 +1798,10 @@ video {
   border-width: 1px !important;
 }
 
+.border-2 {
+  border-width: 2px !important;
+}
+
 .border-x {
   border-left-width: 1px !important;
   border-right-width: 1px !important;
@@ -2613,6 +2621,26 @@ section {
     animation: translateH 20s infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
+  }
+
+  .horas-hover {
+    transform: translateY(0%);
+    transition: transform 2s ease-in-out 0s;
+  }
+
+  .horas-hover:hover {
+    transform: translateY(-10%);
+    transition: transform 2s ease-in-out 0s;
+  }
+
+  .kafrabot-hover {
+    transform: translateY(0%);
+    transition: transform 4s ease-in-out 0s;
+  }
+
+  .kafrabot-hover:hover {
+    transform: translateY(-60%);
+    transition: transform 4s ease-in-out 0s;
   }
 }
 
