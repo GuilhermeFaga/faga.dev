@@ -113,6 +113,11 @@ section {
   background-size: 30px;
 }
 
+.phone {
+  background: url("/icons/phone.svg") no-repeat;
+  background-size: 30px;
+}
+
 .linkedin {
   background: url("/icons/linkedin.svg") no-repeat;
   background-size: 30px;

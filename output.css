@@ -1802,10 +1802,6 @@ video {
   border-width: 2px !important;
 }
 
-.border-8 {
-  border-width: 8px !important;
-}
-
 .border-4 {
   border-width: 4px !important;
 }
@@ -2688,6 +2684,11 @@ section {
 
 .mail {
   background: url("/icons/mail.svg") no-repeat;
+  background-size: 30px;
+}
+
+.phone {
+  background: url("/icons/phone.svg") no-repeat;
   background-size: 30px;
 }
 
