@@ -1802,6 +1802,14 @@ video {
   border-width: 2px !important;
 }
 
+.border-8 {
+  border-width: 8px !important;
+}
+
+.border-4 {
+  border-width: 4px !important;
+}
+
 .border-x {
   border-left-width: 1px !important;
   border-right-width: 1px !important;
@@ -1858,6 +1866,11 @@ video {
 
 .border-none {
   border-style: none !important;
+}
+
+.border-black {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity)) !important;
 }
 
 .border-gray-200 {
